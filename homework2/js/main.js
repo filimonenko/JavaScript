@@ -56,7 +56,7 @@ console.log(reverse2(arrayTestFunctionReverse));
 function aliquot(arr, num) {
   var arrayMultipleNumbers = [];
   for (var i = 0; i < arr.length; i++) {
-  	if (arr[i] % 5 === 0 ) {
+  	if (arr[i] % num === 0 ) {
   		arrayMultipleNumbers.push(arr[i])
   	}
   }
@@ -66,38 +66,16 @@ var arrTestFunctionAliquot = [10, 20, 30, 44, 77, 13, 25];
 
 console.log(aliquot(arrTestFunctionAliquot, 5));
 
+//  function returns all equals numbers indexes
+function indexOfAllElements (arr, num){
+	var arrIndexes = [];
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] === num){
+			arrIndexes.push(i);
+		}
+	}
+	return arrIndexes
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var arrTestFunctionIndexOfAllElements = [10, 20, 30, 44, 77, 13, 44, 25, 44];
+console.log(getindexesEquivalentNumbers(arrTestFunctionGetindexesEquivalentNumbers, 44))
